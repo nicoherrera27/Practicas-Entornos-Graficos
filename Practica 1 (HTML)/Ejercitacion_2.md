@@ -9,7 +9,6 @@ Cada tag puede tener atributos (proporcionan ciertas características como altur
 
 Indicar en qué sección del documento HTML se colocan, cuál es el efecto que producen y señalar cada uno de los elementos, etiquetas, y atributos (nombre y valor), aclarando si es obligatorio.
 
----
 
 ### 2.a)
 
@@ -19,8 +18,6 @@ No produce ningún efecto. `<!--` es la etiqueta de apertura del comentario, lue
 ```html
 <!-- Código controlado el día 12/08/2009 -->
 ```
-
----
 
 ### 2.b)
 
@@ -32,8 +29,6 @@ Se le puede agregar una clase (`class`) o identificador (`id`) para poder asigna
 ```html
 <div id="bloque1">Contenido del bloque1</div>
 ```
-
----
 
 ### 2.c)
 
@@ -53,8 +48,6 @@ El atributo `src` es **obligatorio**, los demás son opcionales:
 <img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
 ```
 
----
-
 ### 2.d)
 
 Este segmento contiene la etiqueta `meta`, que se usa para especificar metadatos del documento HTML.  
@@ -73,8 +66,6 @@ Atributos:
 <meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
 ```
 
----
-
 ### 2.e)
 
 Este segmento contiene la etiqueta `a`, que sirve para crear un hipervínculo.  
@@ -92,8 +83,6 @@ Atributos:
 ```html
 <a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8" rel="help">Resumen HTML</a>
 ```
-
----
 
 ### 2.f)
 
