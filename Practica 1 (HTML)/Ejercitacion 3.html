@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<div> 
+  <!--3.a-->
+    <h1>3.a</h1>
+    <a name="arriba" id="arriba">ARRIBA</a>
+    <br> <br>
+
+    <a href="http://www.google.com.ar">Click aquí para ir a Google</a> 
+    <p>Al hacer click en el texto, redirige a Google en la misma pestaña</p>
+
+    <a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+    <p>Al hacer click en el texto, redirige a Google en una nueva pestaña gracias al atributo 'target'</p>
+
+    <a href="http://www.google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+    <!--Es un enlace hacia google pero al no tener un texto dentro de la etiqueta "a" no redirige a ningun lado-->
+
+    <a href="#">Click aquí para ir a Google</a>
+    <p>Es un redireccionamiento pero el atributo "href" no tiene un enlace como tal, serviria para redirigir a otra pagina del HTML</p>
+
+    <a href="#arriba">Click aquí para volver arriba</a>
+    <p>Redirecciona a la parte de la pagina donde esta el texto "ARRIBA" el cual tiene un id llamado arriba</p>
+
+</div>
+
+<div>
+  <!--3.b-->
+    <h1>3.b</h1>
+    <p><img src="imagenes_ejerc_3/Google_2015_logo.svg.webp" alt="google_jpg" width="100px"/><a href="http://www.google.com.ar">Click aquí</a></p>
+    <p> La imagen no tiene un enlace mientras que el texto si, el cual redirige a Google</p>
+
+    <p><a href="http://www.google.com.ar"><img src="imagenes_ejerc_3/Google_2015_logo.svg.webp" width="100px" alt="google_jpg" /></a> Click aquí</p>
+    <p> La imagen tiene un enlace, el cual redirige a Google y el texto simplemente es texto</p>
+
+    <p><a href="http://www.google.com.ar"><img src="imagenes_ejerc_3/Google_2015_logo.svg.webp" width="100px" alt="google_jpg" />Click aquí</a></p>
+    <p> Tanto el texto como la imagen tienen un enlace asi que da exactamente igual si se clickea uno u otro ya que ambos redirigen a Google (Texto e imagen dentro de una sola etiqueta "a")</p>
+    
+    <p><a id="a1" href="http://www.google.com.ar"><img src="imagenes_ejerc_3/Google_2015_logo.svg.webp" width="100px" alt="google_jpg" /></a> 
+        <a id="a2" href="http://www.google.com.ar">Click aquí</a></p>
+    <p> Tanto el texto como la imagen tienen un enlace asi que da exactamente igual si se clickea uno u otro ya que ambos redirigen a Google (Imagen dentro de un etiqueta "a" con id "a1" y texto dentro de una etiqueta "a" con id "a2")</p>
+</div>
+
+<div>
+  <!--3.c-->
+    <h1>3.c</h1> 
+    <ul>
+        <li>xxx</li>
+        <li>yyy</li>
+        <li>zzz</li>
+    </ul>
+    <p> Utilizacion de la etiqueta "ul". Al ser una lista no ordenada salen con puntos en vez de enumeracion</p>
+
+    <ol>
+        <li>xxx</li>
+        <li>yyy</li>
+        <li>zzz</li>
+    </ol>
+    <p> Utilizacion de la etiqueta "ol". Al ser una lista ordenada salen enumerados segun el orden en el codigo de la pagina</p>
+
+    <ol>
+        <li>xxx</li>
+    </ol>
+    <ol>
+        <li value="2">yyy</li>
+    </ol>
+    <ol>
+        <li value="3">zzz</li>
+    </ol>
+    <p> Seguimos usando lista ordenada pero su contenido es separado y se le asigna los numeros de cada elemento mediante el atributo 'value'</p>
+
+    <blockquote>
+        <p>
+        1. xxx<br />
+        2. yyy<br />
+        3. zzz</p>
+    </blockquote>
+    <p> Utilizacion de la etiqueta "blockquote" que genera una lista en bloque que se utiliza para crear una seccion</p>
+</div>
+
+<div>
+  <!--3.d-->
+    <h1>3.d</h1>
+    <table border="1" width="300">
+        <tr>
+        <th>Columna 1</th>
+        <th>Columna 2</th>
+        </tr>
+        <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+        </tr>
+        <tr>
+        <td>Celda 3</td>
+        <td>Celda 4</td>
+        </tr>
+        </table>
+    <p> Para las columnas se utiliza "th" que son las cabeceras de la tabla </p>
+
+    <table border="1" width="300">
+        <tr>
+        <td><div align="center"><strong>Columna1</strong></div></td>
+        <td><div align="center"><strong>Columna2</strong></div></td>
+        </tr>
+        <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+        </tr>
+        <tr>
+        <td>Celda 3</td>
+        <td>Celda 4</td>
+        </tr>
+        </table>
+    <p> Para las columnas se utiliza "td" que es una celda de la tabla y dentro se pone el atributo "align" para alinear en el centro el texto</p>
+</div>
+
+<div id="3e">3.e 
+    <table width="200">
+        <caption>Título</caption>
+        <tr>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+    </table>
+    <p> Para el titulo se usa una "caption" para el titulo descriptivo y no hace falta usar el atributo "align" para centrarlo </p>
+
+    <table width="200">
+        <tr>
+            <td colspan="3"><div align="center">Título</div></td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+    </table>
+    <p>El titulo se toma como una columna y se utiliza el atributo "align" para alinearlo en el centro</p>
+</div>
+
+<div>
+  <!--3.f-->
+    <h1>3.f</h1>
+    <table width="200">
+        <tr>
+            <td colspan="3"><div align="center">Título</div></td>
+        </tr>
+        <tr>
+            <td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+    </table>
+
+    <p> Esta tabla utiliza el atributo "rowspan" para fusionar 2 filas de 1 columna en una fila </p>
+
+    <table width="200">
+        <tr>
+            <td colspan="3"><div align="center">Título</div></td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+    </table>
+
+    <p> Esta tabla utiliza el atributo "colspan" para fusionar 2 columnas de 1 fila en una columna</p>
+</div>
+
+<div> 
+  <!--3.g-->
+    <h1>3.g</h1>
+    <table width="200" border="1">
+        <tr>
+          <td colspan="3"><div align="center">Título</div></td>
+        </tr>
+        <tr>
+          <td colspan="2"rowspan="2">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="50%">&nbsp;</td>
+        </tr>
+    </table>
+
+    <p> Esta tabla tiene un borde que es especificado con el atributo "border"</p>
+
+    <table width="200" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+            <td colspan="2"><div align="center">Título</div></td>
+        </tr>
+        <tr>
+            <td rowspan="2">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="50%">&nbsp;</td>
+        </tr>
+    </table>
+
+    <p> Esta tabla tambien tiene un borde pero esta vez negro, esto es especificado con los atributos "cellpadding" y "cellspacing"</p>
+</div>
+
+<div>
+  <!--3.h-->
+    <h1>3.h</h1>
+    <form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+        <fieldset>
+            <legend>LOGIN</legend>
+            Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+            Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+        </fieldset>
+        <input type="submit" id="boton1" name="boton1" value="Enviar" />
+    </form>
+
+    <p> Se define un formulario mediante la etiqueta "form", en el cual un usuario puede interactuar para enviar informacion al servidor (login con usuario y contraseña) </p>
+    <P> El input del usuario tiene un tipo de texto (se visualiza el nombre que escribe el usuario) y el input de la Clave tiene un input de password (muestra la contraseña escrita con asteriscos + privacidad)</P>
+    <p> En el form se le pone el metodo "post" que sirve para enviarle datos al servidor</p>
+
+    <form id="form2" name="form2" action="" method="get" target="_blank">LOGIN<br />
+        <label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+        <label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+        <input type="submit" id="boton2" name="boton2" value="Enviar" />
+    </form>
+
+    <p> En este form el tipo de input la contraseña es un texto por lo tanto la contraseña va a ser visible (- privacidad)</p>
+    <p> En este form se le pone el metodo "get" que sirve para conseguir datos del servidor </p>
+
+    <form id="form3" name="form3" action="mailto:xx@xx.com" enctype=text/plain method="post" target="_blank">
+        <fieldset>
+            <legend>LOGIN</legend>
+            Usuario: <input type="text" id="usu3" name="usu3" /><br />
+            Clave: <input type="password" id="clave3" name="clave3" />
+        </fieldset>
+        <input type="reset" id="boton3" name="boton3" value="Enviar" />
+    </form>
+
+    <p> Este form esta utilizando una accion "mailto" que para enviar los datos ingresados a un e-mail proporcionado en la accion</p>
+</div>
+
+<div>
+  <!--3.i-->
+    <h1>3.i</h1> 
+    <p></p>
+    <label>Botón 1
+        <button type="button" name="boton1" id="boton1">
+        <img src="imagenes_ejerc_3/images.jpg" alt="steam-button-jpg" width="30" /><br />
+        <b>CLICK AQUÍ</b></button>
+    </label>
+    
+    <p>Se usa la etiqueta "label" para mostrar un boton con la etiqueta "button", donde dentro del boton hay una foto con la etiqueta "img" y un texto con la etiqueta "b"</p>
+
+    <label>Botón 2
+        <input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+        </label>
+
+    <p> Un boton de tipo "input" sin imagen, solo con texto</p>
+</div>
+
+<div>
+  <!--3.j-->
+    <h1>3.j</h1> 
+    <p></p>
+    <p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+        <label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p>
+
+    <p>Se usa la etiqueta "label" para un boton de opciones, con una etiqueta "input" se le pone el atributo "type=radio" para hacer un selector de opciones con el mismo nombre (atributo "name") para que permita elegir solo una opcion </p>
+
+    <p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+        <label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p>
+    <p> En este caso los nombres (atributo "name") son diferentes por lo tanto se pueden elegir las dos opciones al mismo tiempo </p>
+</div>
+
+<div>
+  <!--3.k-->
+    <h1>3.k</h1> 
+    <p></p>
+    <select name="lista">
+        <optgroup label="Caso 1">
+            <option>Mayo</option>
+            <option>Junio</option>
+        </optgroup>
+        <optgroup label="Caso 2">
+            <option>Mayo</option>
+            <option>Junio</option>
+        </optgroup>
+    </select>
+    <p> Se usa una etiqueta "select" que sirve para seleccionar una opcion. Tenemos 2 casos en el mismo "select" por lo cual se puede elegir una sola opcion </p>
+
+
+    <select name="lista[]" multiple="multiple">
+        <optgroup label=" Caso 1">
+            <option>Mayo</option>
+            <option>Junio</option>
+        </optgroup>
+        <optgroup label=" Caso 2">
+            <option>Mayo</option>
+            <option>Junio</option>
+        </optgroup>
+    </select>
+
+    <p> En este "select" hay un array de elementos que tiene un atributo "multiple" que sirve para seleccionar cero o mas opciones de la lista </p>
+</div>
+
+</body>
+</html>
