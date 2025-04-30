@@ -1,26 +1,30 @@
-* {
+* { /* Cambia el color a todo elemento que no tenga aplicado otro estilo en el documento html  */
   color:green; 
 }
 
-a:link {
+a:link { /* Cambia el color de fuente a los enlaces no visitados  */
   color:gray 
 }
 
-a:visited{
+a:visited{ /* Cambia el color de fuente a los enlaces visitados  */
   color:blue 
 }
 
-a:hover {
+a:hover { /* Cambia el color de fuente a los enlaces al pasar el cursor del mouse por encima  */
   color:fuchsia 
 }
-a:active {
+
+a:active { /* Cambia el color de fuente a los enlaces al hacer click  */
   color:red 
 }
 
-p {
-  font-family: arial,helvetica;font-size: 10px;color:black; 
+p { /* A todos los parrafos se le aplica el tip de fuente arial helvetica, un tamaño de fuente de 10 px y color de fuente negro  */
+  font-family: arial,helvetica;
+  font-size: 10px;
+  color:black; 
 }
 
-.contenido{
-  font-size: 14px;font-weight: bold; 
+.contenido{  /* A todo elemento con clase "contenido" se le aplica un tamaño de fuente de 14px y en negrita  */
+  font-size: 14px;
+  font-weight: bold;
 }
