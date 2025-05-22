@@ -34,4 +34,4 @@
 
  ## Salida por pantalla:
 
-  ![alt text](image.png)
+  ![alt text](ej1_out.png)
