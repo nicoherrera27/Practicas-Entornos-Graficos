@@ -1,0 +1,44 @@
+.formulario{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  color: #555;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.mensaje {
+  background-color: #e9ffe9;
+  color: #2c662d;
+  border: 1px solid #a6d8a8;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
