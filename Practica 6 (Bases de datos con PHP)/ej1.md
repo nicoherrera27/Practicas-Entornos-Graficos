@@ -30,22 +30,22 @@ devolver un mensaje de error para la ultima llamada a una funcion de MySQL
 
 ## Si la función mysqli_query() es exitosa, el conjunto resultante retornado se almacena en una variable, por ejemplo `$vResult`, y a continuación se puede ejecutar el siguiente código (explicarlo):
 
-## <?php
-## while ($fila = mysqli_fetch_array($vResultado))
-##   {
-##     ?>
-##     <tr>
-##      <td><?php echo ($fila[0]); ?></td>
-##      <td><?php echo ($fila[1]); ?></td>
-##      <td><?php echo ($fila[2']); ?></td>
-##     </tr>
-##     <tr>
-##      <td colspan="5">
-##     <?php
-##   }
-##   mysqli_free_result($vResultado);
-##   mysqli_close($link);
-## ?>
+<?php
+while ($fila = mysqli_fetch_array($vResultado))
+  {
+    ?>
+    <tr>
+     <td><?php echo ($fila[0]); ?></td>
+     <td><?php echo ($fila[1]); ?></td>
+     <td><?php echo ($fila[2']); ?></td>
+    </tr>
+    <tr>
+     <td colspan="5">
+    <?php
+  }
+  mysqli_free_result($vResultado);
+  mysqli_close($link);
+?>
 
 El codigo recorre los resultados que contiene la variable `$vResultado` mediante un while y los agrega a un array llamado `$fila`, luego muestra cada elemento de ese array en forma de tabla en HTML, para finalizar libera la variable `$vResultado` y cierra la conexion a la base de datos
 
