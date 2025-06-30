@@ -1,0 +1,14 @@
+body {
+  background-color: #e0f7fa;
+  color: #004d40;
+}
+
+.custom-form {
+  background-color: #b2ebf2;
+  border: 2px solid #00acc1;
+}
+
+.btn-primary {
+  background-color: #00838f;
+  border-color: #006064;
+}
